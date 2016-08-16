@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Swift n' Web</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vendor/screen-16x10.css">
+	<!-- <link rel="stylesheet" href="vendor/screen-4x3.css"> -->
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Swift in the Web</h1>
+		<p>by Roman Paradeev</p>
+	</header>
+	<section class="slide" id="cover">
+		<h2>Swift in the Web</h2>
+		<p>by Roman Paradeev</p>
+		<style>
+			#cover h2 {
+				margin:180px 0 0;
+				/*color:#FFF;*/
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				/*color:#FFF;*/
+				font-style:italic;
+				font-size:20px;
+				}
+				#cover p a {
+					color:#FFF;
+					}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>What is Swift?</h2>
+		<ul>
+		<li>Created by Apple on June 2, 2014</li>
+		<li>Open-sourced on December 13, 2015</li>
+		<li>Most Loved Programming Language *</li>
+		</ul>
+		<p>* in the StackOverflow Developer Survey 2015 (2nd in 2016)</p>
+	</section>
+	<section class="slide">
+		<h2>Swift is safe</h2>
+		<p>Strict static typing, Optional values, and Value types</p>
+		<h2>Swift is fast</h2>
+		<p>Compilation, and Automatic Reference Counting</p>
+		<h2>Swift is expressive</h2>
+		<p>Extensions and Protocols, and Optional chaining</p>
+	</section>
+	<section class="slide">
+		<p class="shout">Universal<br>Swift</p>
+	</section>
+	<section class="slide">
+		<img class="shout" src="pictures/frameworks.png">
+	</section>
+	<section class="slide">
+		<h2>Vapor</h2>
+		<ul>
+			<li>Easy-to-read docs</li>
+			<li>Handy CLI tool</li>
+			<li>Last commit < 1 day ago</li>
+			<li>Looks like Express</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Install swiftenv</h2>
+		<pre><code>git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
+
+echo 'export SWIFTENV_ROOT="$HOME/.swiftenv"' >> ~/.bashrc
+echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(swiftenv init -)"' >> ~/.bashrc
+
+source ~/.bashrc
+		</code></pre>
+	</section>
+	<section class="slide">
+		<h2>Install last swift snapshot</h2>
+		<pre><code>swiftenv install DEVELOPMENT-SNAPSHOT-2016-07-25-a
+swiftenv global DEVELOPMENT-SNAPSHOT-2016-07-25-a
+		</code></pre>
+		<h2>Install toolbox</h2>
+		<pre><code>curl -sL toolbox.vapor.sh | bash
+		</code></pre>
+	</section>
+	<section class="slide">
+		<h2>Manage your project</h2>
+		<pre><code>vapor new Hello
+
+cd Hello
+vapor xcode
+
+vapor build
+vapor run serve
+		</code></pre>
+	</section>
+	<section class="slide">
+		<h2>Swift in the Web</h2>
+		<p>Roman Paradeev</p>
+		<p>@sameoldmadness</p>
+		<p></p>
+	</section>
+	<div class="progress"></div>
+	<script src="vendor/shower.min.js"></script>
+</body>
+</html>
